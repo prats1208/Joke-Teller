@@ -25,12 +25,16 @@ function audioJoke(joke){
         f: '44khz_16bit_stereo',
         ssml: false
     });
+    audio.onended = () =>{
+        button.disabled = false;
+    }
 }
 
 
 // get jokes from API
 
 async function getJokes(){
+    button.disabled = true;
     let joke = '';
     const apiUrl = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
     try{
