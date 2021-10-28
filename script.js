@@ -16,7 +16,7 @@ audio.src = t.responseText;audio.play();
 function audioJoke(joke){
     console.log(joke);
     VoiceRSS.speech({
-        key: '83ea38afcad34ef8b9fb7b2ae71c04dc',
+        key: 'API-Key',
         src: joke,
         hl: 'en-us',
         v: 'Linda',
