@@ -32,7 +32,6 @@ function audioJoke(joke){
 
 
 // get jokes from API
-
 async function getJokes(){
     button.disabled = true;
     let joke = '';
